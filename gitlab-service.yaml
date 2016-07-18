@@ -4,8 +4,8 @@ metadata:
   name: gitlab
   labels:
     name: gitlab
-spec:type: NodePort
-  
+spec:
+  type: NodePort
   ports:
   - port: 80
     nodePort: 31201
