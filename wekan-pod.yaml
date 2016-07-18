@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: wekan
-        image: devopsopen/docker-ca-wekan:lastest
+        image: devopsopen/docker-ca-wekan:latest
         ports:
         - containerPort: 80
