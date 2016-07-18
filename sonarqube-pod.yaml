@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: sonarqube
+  labels:
+    name: sonarqube
+spec:
+  replicas: 2
+  selector:
+    name: sonarqube
+  template:
+    metadata:
+      labels:
+        name: sonarqube
+    spec:
+      containers:
+      - name: sonarqube
+        image: devopsopen/docker-cq-sonarqube:lastest
+        ports:
+        - containerPort: 9000
