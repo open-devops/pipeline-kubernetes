@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: jenkins
-        image: :lastest
+        image: devopsopen/docker-ci-jenkins:lastest
         ports:
-        - containerPort: 80
+        - containerPort: 8080
