@@ -4,8 +4,8 @@ metadata:
   name: jenkins
   labels:
     name: jenkins
-spec:type: NodePort
-  
+spec:
+  type: NodePort
   ports:
   - port: 8080
     nodePort: 31401
