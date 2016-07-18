@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: gitlab
+  labels:
+    name: gitlab
+spec:
+  replicas: 2
+  selector:
+    name: gitlab
+  template:
+    metadata:
+      labels:
+        name: gitlab
+    spec:
+      containers:
+      - name: gitlab
+        image: devopsopen/docker-scm-gitlab:lastest
+        ports:
+        - containerPort: 80
