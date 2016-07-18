@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: gitlab
-        image: devopsopen/docker-scm-gitlab:lastest
+        image: devopsopen/docker-scm-gitlab:latest
         ports:
         - containerPort: 80
