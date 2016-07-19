@@ -7,7 +7,7 @@ git clone git@github.com:open-devops/pipeline-kubernetes
 
 #pipeline init
 
-cd pipeline-docker; sh pipeline init
+cd pipeline-kubernetes; sh pipeline init
 
 #pipeline start up
 
