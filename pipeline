@@ -232,8 +232,6 @@ elif [ _"stop" = _"${action}" ]; then
     kubectl delete -f ${cap}-service.yaml
     sleep 1
   done
-  usage
-  exit 1
 fi
 
 date
