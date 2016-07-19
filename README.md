@@ -1,6 +1,18 @@
 # pipeline-kubernetes
 Pipeline orchestrated by kubernetes
 
+#git clone
+
+git clone git@github.com:open-devops/pipeline-kubernetes
+
+#pipeline init
+
+cd pipeline-docker; sh pipeline init
+
+#pipeline start up
+
+sh pipeline up
+
 # external ports
 ca: wekan:31101
 
