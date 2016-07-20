@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: portal
-        image: devopsopen/docker-ca-portal:latest
+        image: devopsopen/docker-pipeline-portal:latest
         ports:
-        - containerPort: 80
+        - containerPort: 3000
