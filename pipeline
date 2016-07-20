@@ -208,13 +208,13 @@ fi
 date
 if [ _"init" = _"${action}" ]; then
   echo "##  pipeline init will pull latest images from devopsopen of dockhub"
-  for image in ci-jenkins cq-sonarqube ca-wekan scm-artifactory scm-gitlab
+  for image in ci-jenkins cq-sonarqube pipeline-portal scm-artifactory scm-gitlab
   do
     pull_docker_image devopsopen/docker-${image}
   done
 elif [ _"up" = _"${action}" ]; then
   echo "##  pipeline up will create services"
-  for cap in gitlab jenkins sonarqube wekan
+  for cap in gitlab jenkins sonarqube portal
   do
     echo "#   start service: ${cap}"
     kubectl create -f ${cap}-pod.yaml
@@ -225,7 +225,7 @@ elif [ _"status" = _"${action}" ]; then
   kubectl get services
 elif [ _"stop" = _"${action}" ]; then
   echo "##  pipeline stop will stop services"
-  for cap in gitlab jenkins sonarqube wekan
+  for cap in gitlab jenkins sonarqube portal
   do
     echo "#   stop service: ${cap}"
     kubectl delete -f ${cap}-pod.yaml
