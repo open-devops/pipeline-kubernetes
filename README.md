@@ -2,19 +2,19 @@
 Pipeline orchestrated by kubernetes
 
 # Usage
-git clone
+git clone  
 ```git clone git@github.com:open-devops/pipeline-kubernetes```
 
-pipeline init
+pipeline init  
 ```cd pipeline-kubernetes; sh pipeline init```
 
-pipeline start up
+pipeline start up  
 ```sh pipeline up```
 
-:pipeline status confirmation
+:pipeline status confirmation  
 ```sh pipeline status```
 
-:pipeline stop
+:pipeline stop  
 ```sh pipeline stop``````
 
 # external ports
