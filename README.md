@@ -11,18 +11,20 @@ pipeline init
 pipeline start up  
 ```sh pipeline up```
 
-:pipeline status confirmation  
+pipeline status confirmation  
 ```sh pipeline status```
 
-:pipeline stop  
+pipeline stop  
 ```sh pipeline stop``````
 
 # external ports
-ca: wekan:31101
+Type | Capacity | Port|
+-----|----------|-----|
+ca   | wekan    |31101              |
 
-ca: jira :31102
+ca            | jira              |   31102 |
 
-scm:gitlab:31201
+scm | gitlab | 31201 |
 
 scm:artifactory:31202
 
