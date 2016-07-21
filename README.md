@@ -15,7 +15,7 @@ sh pipeline up
 
 #pipeline status confirmation
 
-sh pipeline ps
+sh pipeline status
 
 #pipeline stop
 
