@@ -1,25 +1,21 @@
 # pipeline-kubernetes
 Pipeline orchestrated by kubernetes
 
-#git clone
+# Usage
+:git clone
+>git clone git@github.com:open-devops/pipeline-kubernetes
 
-git clone git@github.com:open-devops/pipeline-kubernetes
+:pipeline init
+>cd pipeline-kubernetes; sh pipeline init
 
-#pipeline init
+:pipeline start up
+>sh pipeline up
 
-cd pipeline-kubernetes; sh pipeline init
+:pipeline status confirmation
+>sh pipeline status
 
-#pipeline start up
-
-sh pipeline up
-
-#pipeline status confirmation
-
-sh pipeline status
-
-#pipeline stop
-
-sh pipeline stop
+:pipeline stop
+>sh pipeline stop
 
 # external ports
 ca: wekan:31101
