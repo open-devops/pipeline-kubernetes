@@ -13,6 +13,14 @@ cd pipeline-kubernetes; sh pipeline init
 
 sh pipeline up
 
+#pipeline status confirmation
+
+sh pipeline ps
+
+#pipeline stop
+
+sh pipeline stop
+
 # external ports
 ca: wekan:31101
 
